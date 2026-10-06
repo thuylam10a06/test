@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A personal portfolio and digital space." />
+  <title>Personal — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top">me<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle theme">☼</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PERSONAL SPACE / 2026</p>
+        <h1>Curious mind.<br><em>Creative energy.</em></h1>
+        <p class="hero-text">
+          A small corner of the internet about learning, music, ideas,
+          and the things that make everyday life interesting.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#about">Get to know me</a>
+          <a class="button ghost" href="#projects">See my work ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="card-top"><span>NOW</span><span>01 — 04</span></div>
+        <div class="orb"></div>
+        <p class="card-label">Currently exploring</p>
+        <h2>Music × Design × Web</h2>
+        <p class="muted">Learning new things, making little projects, and collecting ideas worth keeping.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section split">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>A work in progress,<br><em>on purpose.</em></h2>
+      </div>
+      <div class="section-body reveal">
+        <p>
+          I'm a student who likes making things feel a little more thoughtful:
+          from a clean presentation to a melody on the piano or a website that
+          actually feels good to use.
+        </p>
+        <p>
+          I enjoy learning across different subjects instead of staying in one box.
+          Some days are for studying; others are for music, design, stories, or
+          simply finding a better way to do something.
+        </p>
+        <div class="mini-stats">
+          <div><strong>01</strong><span>Always learning</span></div>
+          <div><strong>02</strong><span>Creative by nature</span></div>
+          <div><strong>03</strong><span>Curious about everything</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / INTERESTS</p>
+        <h2>Things I keep<br><em>coming back to.</em></h2>
+      </div>
+
+      <div class="interest-grid">
+        <article class="interest reveal">
+          <span class="number">01</span>
+          <h3>Music</h3>
+          <p>Piano, melodies, songs, and the oddly satisfying feeling of finally getting a difficult part right.</p>
+          <span class="tag">listen / play</span>
+        </article>
+        <article class="interest reveal">
+          <span class="number">02</span>
+          <h3>Design</h3>
+          <p>Clean layouts, strong typography, visual storytelling, and details that make a page feel intentional.</p>
+          <span class="tag">make / refine</span>
+        </article>
+        <article class="interest reveal">
+          <span class="number">03</span>
+          <h3>Stories</h3>
+          <p>Literature, characters, strange ideas, and the little details that make a story stay in your head.</p>
+          <span class="tag">read / notice</span>
+        </article>
+        <article class="interest reveal">
+          <span class="number">04</span>
+          <h3>Web</h3>
+          <p>Trying ideas in HTML, CSS, and JavaScript and slowly turning “what if?” into something real.</p>
+          <span class="tag">build / experiment</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / PROJECTS</p>
+        <h2>Small ideas,<br><em>made real.</em></h2>
+      </div>
+
+      <div class="project-list">
+        <article class="project reveal">
+          <div>
+            <span class="project-index">01</span>
+            <h3>Personal Web</h3>
+          </div>
+          <p>A minimal personal site designed as a flexible space to introduce myself and collect future work.</p>
+          <span class="project-type">HTML / CSS / JS</span>
+        </article>
+        <article class="project reveal">
+          <div>
+            <span class="project-index">02</span>
+            <h3>Creative Presentations</h3>
+          </div>
+          <p>School projects that turn research and ideas into something more visual, memorable, and fun to experience.</p>
+          <span class="project-type">STORY / DESIGN</span>
+        </article>
+        <article class="project reveal">
+          <div>
+            <span class="project-index">03</span>
+            <h3>Music Practice</h3>
+          </div>
+          <p>A long-term personal project: learning, practicing, and building a small repertoire one piece at a time.</p>
+          <span class="project-type">PIANO / AUDIO</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact reveal">
+      <p class="eyebrow">04 / CONTACT</p>
+      <h2>Let's make something<br><em>interesting.</em></h2>
+      <p>More links and projects can live here as this site grows.</p>
+      <div class="contact-links">
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="#" onclick="copyNote(event)">Copy a hello</a>
+      </div>
+      <span id="copy-status" class="copy-status" role="status"></span>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 — personal space</span>
+    <span>Made with curiosity.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
